@@ -16,11 +16,24 @@ public class Main {
             int selectedNumber = sc.nextInt();
 
             switch (selectedNumber) {
-                case 1 -> System.out.println(n1 + " + " + n2 + " = " + (n1 + n2));
-                case 2 -> System.out.println(n1 + " - " + n2 + " = " + (n1 - n2));
-                case 3 -> System.out.println(n1 + " / " + n2 + " = " + (n1 / n2));
-                case 4 -> System.out.println(n1 + " * " + n2 + " = " + (n1 * n2));
-                default -> System.out.println("Please enter valid number.");
+                case 1:
+                    System.out.println(n1 + " + " + n2 + " = " + (n1 + n2));
+                    break;
+                case 2:
+                    System.out.println(n1 + " - " + n2 + " = " + (n1 - n2));
+                    break;
+                case 3:
+                    switch ((int) n2) {
+                        case 0 -> System.out.println("Dividing a number by zero is undefined.");
+                        default -> System.out.println(n1 + " / " + n2 + " = " + (n1 / n2));
+                    }
+                    break;
+                case 4:
+                    System.out.println(n1 + " * " + n2 + " = " + (n1 * n2));
+                    break;
+                default:
+                    System.out.println("Please enter valid number.");
+                    break;
             }
             count--;
         }
