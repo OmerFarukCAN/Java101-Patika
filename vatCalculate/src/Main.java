@@ -3,8 +3,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int vat = 0;
+        int priceWithoutVat;
+
         Scanner sc = new Scanner(System.in);
-        int priceWithoutVat = sc.nextInt();
+        priceWithoutVat = sc.nextInt();
 
         if (priceWithoutVat > 0 && priceWithoutVat <= 1000) {
             vat = 18;
