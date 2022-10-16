@@ -9,11 +9,6 @@ public class Main {
         System.out.print("Please enter a number: ");
         number = sc.nextInt();
 
-        if (number % 2 != 0) {
-            for (int i = 0; i < number; i++) {
-                if (i % 4 == 0) total += i;
-            }
-        }
         while (number % 2 == 0) {
             System.out.print("Please enter a number: ");
             number = sc.nextInt();
