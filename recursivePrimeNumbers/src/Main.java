@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-
     static void isPrimeNumber(int number, int k) {
         if (number == k) {
             System.out.println(number + " is a prime number");
